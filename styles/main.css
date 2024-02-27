@@ -1,0 +1,85 @@
+html{
+  height: 100%;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container{
+  min-width: 300px;
+  height: auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container img{
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+
+.container h2{
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.container h4{
+  font-size: 15px;
+  margin: 10px;
+  color: hsl(75, 94%, 57%);
+}
+
+.container p{
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+}
+
+.container a{
+  width: 100%;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 12px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.container a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+@media only screen and (max-width: 700px){
+  body, html{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container{
+    width: 80%;
+    margin: 20px;
+    padding: 10px 0;
+  }
+
+  .container a{
+    margin: 5px 0;
+    width: 80%;
+  }
+}
